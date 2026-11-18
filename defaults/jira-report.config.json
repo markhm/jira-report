@@ -1,0 +1,33 @@
+{
+  "$comment": "Reference config. Copy to jira-report.local.json (gitignored, next to this repo's root) or pass --config. Relative paths resolve against the config file's own folder.",
+  "brand": "../brands/default",
+  "title": "Programme status",
+  "outputDir": "../reports",
+  "milestones": [
+    {
+      "name": "UAT",
+      "date": "2027-01-15"
+    }
+  ],
+  "customFieldMinFill": 0.05,
+  "forecast": {
+    "weeks": 12,
+    "runs": 4000
+  },
+  "oauth": {
+    "clientId": null,
+    "callbackPort": 8765,
+    "scopes": [
+      "read:jira-work",
+      "read:jira-user",
+      "read:board-scope:jira-software",
+      "read:board-scope.admin:jira-software",
+      "read:project:jira",
+      "read:issue-details:jira",
+      "offline_access"
+    ]
+  },
+  "quality": false,
+  "qualityNotes": null,
+  "concurrency": 6
+}

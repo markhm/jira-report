@@ -1,0 +1,8 @@
+{
+  "name": "Acme",
+  "logo": "logo.svg",
+  "logoDark": "auto",
+  "accent": "#3D5A80",
+  "accentLight": "#4F73A3",
+  "accentDark": "#9DB8DA"
+}

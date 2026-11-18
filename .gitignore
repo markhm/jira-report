@@ -1,0 +1,22 @@
+# Fiberplane local issue tracking
+.fp/*
+!.fp/remote.toml
+
+# Generated reports carry full, confidential Jira data (names, emails, comments). Never commit.
+/reports/*
+!/reports/.gitkeep
+*.html
+!/template/*.html
+
+# Local overrides of the default config (may name a private site / OAuth app)
+/jira-report.local.json
+
+**/.DS_Store
+node_modules/
+
+# Brands are local (logos and colours of the organisations you report for); only the neutral default is shared.
+/brands/*
+!/brands/default/
+
+# IDE
+.idea/

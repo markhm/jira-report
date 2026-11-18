@@ -1,0 +1,19 @@
+{
+  "name": "jira-report",
+  "version": "0.1.0",
+  "description": "Self-contained, branded HTML report over a Jira Cloud project: status, classification, process, flow and forecast.",
+  "type": "module",
+  "bin": {
+    "jira-report": "bin/jira-report.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test test/",
+    "fixture": "node test/fixtures/render-fixture.mjs",
+    "smoke": "node test/fixtures/render-fixture.mjs && node tools/smoke.mjs reports/fixture.html && node tools/smoke.mjs reports/fixture-first-run.html && node tools/smoke.mjs reports/fixture-portfolio.html"
+  },
+  "license": "MIT",
+  "private": true
+}
